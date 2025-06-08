@@ -1,3 +1,4 @@
+<?php include 'includes/header.php'; ?>
 <?php include 'conexao.php'; ?>
 <canvas id="grafico" width="400" height="200"></canvas>
 <script src="js/chart.min.js"></script>
@@ -18,3 +19,4 @@ fetch("dados-json.php")
     });
   });
 </script>
+<?php include 'includes/footer.php'; ?>

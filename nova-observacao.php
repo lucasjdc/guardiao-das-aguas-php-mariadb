@@ -1,3 +1,4 @@
+<?php include 'includes/header.php'; ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -43,6 +44,4 @@
 
   <button type="submit">Enviar</button>
 </form>
-
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>
