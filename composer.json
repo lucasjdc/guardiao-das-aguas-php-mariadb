@@ -1,0 +1,13 @@
+{
+    "name": "lucas/guardiao-das-aguas",
+    "require-dev": {
+        "dompdf/dompdf": "^3.1"
+    },
+    "authors": [
+        {
+            "name": "lucasjdc",
+            "email": "lucasjpdc@gmail.com"
+        }
+    ],
+    "require": {}
+}
