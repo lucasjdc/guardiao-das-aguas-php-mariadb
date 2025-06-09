@@ -1,4 +1,5 @@
-<?php include 'includes/header.php'; ?>
+<?php include 'config.php'; // Inclua o config.php primeiro ?>
+<?php include 'includes/header.php'; // Em seguida, inclua o header ?>
 
 <form action="salvar.php" method="POST" enctype="multipart/form-data">
   <label for="local">Local:</label>
@@ -36,6 +37,21 @@
 
   <button type="submit">Enviar</button>
 </form>
-<?php include 'includes/footer.php'; ?>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+        const dataInput = document.getElementById('data');
 
-não esta ajustando no celular
+        form.addEventListener('submit', function(event) {
+            const selectedDate = new Date(dataInput.value);
+            const currentDate = new Date();
+            currentDate.setHours(0, 0, 0, 0); // Zera as horas para comparar apenas a data
+
+            if (selectedDate > currentDate) {
+                alert('A data da observação não pode ser futura.');
+                event.preventDefault(); // Impede o envio do formulário
+            }
+        });
+    });
+</script>
+<?php include 'includes/footer.php'; ?>

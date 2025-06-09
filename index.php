@@ -1,4 +1,5 @@
-<?php include 'includes/header.php'; ?>
+<?php include 'config.php'; // Inclua o config.php primeiro ?>
+<?php include 'includes/header.php'; // Em seguida, inclua o header ?>
 <?php include 'conexao.php'; ?>
 <canvas id="grafico" width="400" height="200"></canvas>
 <script src="js/chart.min.js"></script>
