@@ -1,12 +1,4 @@
 <?php include 'includes/header.php'; ?>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <title>Nova Observação - Guardião das Águas</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
 
 <form action="salvar.php" method="POST" enctype="multipart/form-data">
   <label for="local">Local:</label>
@@ -45,3 +37,5 @@
   <button type="submit">Enviar</button>
 </form>
 <?php include 'includes/footer.php'; ?>
+
+não esta ajustando no celular
